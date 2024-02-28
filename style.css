@@ -3,11 +3,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("images/BG.jpg");
+    background-image: url("images/homepagebg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;   
+}
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .left
+{
+    display: flex;
+}
+.right
 {
     display: flex;
 }
@@ -22,6 +30,7 @@ body {
     white-space: nowrap;
     z-index: 3;
     color: black;
+    position: fixed;
 }
 .navbar a {
     
@@ -38,6 +47,16 @@ body {
     transition: 750ms;
     filter: drop-shadow(4px 4px 8px black);  
 }
+.animation{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+    color: black;
+    z-index: 2;
+    
+  }
+  
+
 .lc
 {
     display: flex;
@@ -45,14 +64,14 @@ body {
 }
 .loginbar
 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 20px;
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
     align-self: flex-end;
-    margin-right: 10%;
-    margin-top: 8%;
+    margin-right: 13%;
+    margin-top: 9%;
     height: 350px;
     width: 300px;   
     text-align: center;
@@ -70,16 +89,106 @@ button:hover {
     filter: drop-shadow(2px 2px 4px black);
     transition: 300ms;
   }
-footer
+
+input
 {
-    margin-top: 250px;
-    background-color: rgb(230, 232, 243);
-    height: 100px;
-    padding: 50px;
-    padding-top: 50px;
+    height: 27px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
     
 }
-label
+input::placeholder
 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:120%;
     
 }
+#login
+{
+    height: 35px;
+    width: 80px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#back
+{    
+    font-size: 15px;
+}
+
+#newreg
+{
+    
+    font-size: 15px;
+}
+#back:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#newreg:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer
+{
+    
+    background-color:rgb(64, 209, 235);
+    padding: 20px;
+    padding-top: px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 600px;
+    justify-content: space-between;
+}
+.column
+{
+    padding: 10px;
+}
+
+.column p {
+    
+    margin-top: 10px; /* Add margin for spacing */
+}
+.animation
+{
+    margin-bottom: 0px;
+}
+
+.wrapper {
+    height: 10px;
+    margin-left: 40px;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 68ch;
+    animation: typing 2s , blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .image-container {
+    position: relative;
+}
+
+
+
+
