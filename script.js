@@ -1,0 +1,6 @@
+function showVoterForm()
+{
+    loginbar.innerHTML=`
+    
+    ` 
+}
