@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Side</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-image: url("images/BG.jpg"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left
+        {
+            display: flex;
+        }
+        .navbar {
+            background-color:rgb(64, 209, 235);
+            overflow: hidden;
+            color: white;
+            padding: 10px 10px;
+            display: flex;  
+            justify-content: space-between;
+            align-items: center;
+            white-space: nowrap;
+            z-index: 3;
+            color: black;
+            position: fixed;
+            margin-bottom: 300px;
+        }
+        .navbar a {
+            
+            text-decoration: none;
+            margin-right: 5px; /* Adjust the margin between links as needed */
+            white-space: nowrap; /* Prevent line breaks within links */
+            color: black;
+            padding: 10px;
+            
+        }
+        .navbar a:hover{
+            background-color: beige;
+            border-radius: 50px;
+            transition: 750ms;
+            filter: drop-shadow(4px 4px 8px black);  
+        }
+        .footer
+        {
+            
+            background-color:rgb(64, 209, 235); 
+            padding: 20px;
+            margin-top: 600px;
+            
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 600px;
+            justify-content: space-between;
+        }
+        .column
+        {
+            padding: 10px;
+        }
+        
+        .column p {
+            
+            margin-top: 10px; /* Add margin for spacing */
+        }
+        .sep
+        {
+            display: flex;
+            gap: 10px;
+        }
+        .sidebar
+        {
+            padding: 40px;
+            padding-top: 5px;
+            border: 2px solid black;
+            margin: 20px;
+            border-radius: 20px;
+            width: 200px;
+            height: 480px;
+            padding-left: 0px;
+            margin-top: -5px;
+            
+        }
+        .sep1
+        {
+            display: flex;
+            gap: 1px;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            padding-top: 10px;
+            
+            border-radius: 20px;
+            margin-left: px;
+            
+            cursor: pointer;
+            border-top-left-radius: 0%;
+            border-bottom-left-radius: 0%;
+            border-left: 0px;
+            user-select: none;
+            
+            
+
+        }
+        .sep1:hover
+        {
+            background-color: gainsboro
+        }
+        
+        .right1
+        {
+            margin-left: -500px;
+            margin-top: -10px;
+        }
+        .sep1.clicked
+        {
+            background-color:rgb(64, 209, 235);
+        }
+        .main
+        {
+            border: 2px solid black;
+            width: 1230px;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+            padding: 5px;
+
+        }
+        .main p
+        {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .animation
+        {
+            margin-left: 350px;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        .wrapper {
+            height: 10px;
+            margin-left: 40px;
+            /*This part is important for centering*/
+            place-items: center;
+          }
+          
+          .typing-demo {
+            width: 32ch;
+            animation: typing 2s , blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 20px;
+          }
+          
+          @keyframes typing {
+            from {
+              width: 0
+            }
+          }
+              
+          @keyframes blink {
+            50% {
+              border-color: transparent
+            }
+          }
+          .imgc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 20px;
+            margin: 10px;
+        }
+    
+        .snippet {
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 100px;
+            width: 350px;
+            display: flex;
+             /* Stack image and text vertically */
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+    
+        .snippet img {
+            height: 110px; /* Adjust the image height as needed */
+            width: 110px;
+            border-radius: 100px; /* Adjust the image width as needed */
+        }
+        .snippet p{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .snippet:hover
+        {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 2px black;
+            transition: 0.5s;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="left">
+            <img src="images/bmslogo.png" alt="error" srcset="" height="6.5%" width="6.5%"> &nbsp;
+            <p style="margin: 20px; font-size:xx-large"><b>BMSCE ELECTIONS</b></p>  
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a> &nbsp; &nbsp;
+            <a href="aboutus.html">About Us</a>&nbsp; &nbsp;
+            <a href="contactus.html">Contact Us</a>  
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="sep">
+        <div class="sidebar">
+            <p style="font-size: 20px; text-align:center; margin-left:40px"><b>Navigation Bar</b></p>
+            <div class="sep1">
+                <div><img src="images/candsym/p.png" alt="" srcset="" height="10%" width="10%"></div>
+                <div class="right1"><p>President</p></div>
+            </div>
+            <div class="sep1">
+                <div><img src="images/candsym/vp.png" alt="" srcset="" height="10%" width="10%"></div>
+                <div class="right1"><p>Vice-President</p></div>
+            </div>
+            <div class="sep1">
+                <div><img src="images/candsym/s.png" alt="" srcset="" height="10%" width="10%"></div>
+                <div class="right1"><p>Secretery</p></div>
+            </div>
+            <div class="sep1">
+                <div><img src="images/candsym/t.png" alt="" srcset="" height="10%" width="10%"></div>
+                <div class="right1"><p>Treasurer</p></div>
+            </div>
+            <div class="sep1">
+                <div><img src="images/candsym/mh.png" alt="" srcset="" height="10%" width="10%"></div>
+                <div class="right1"><p>Marketing Head</p></div>
+            </div>
+        </div>
+        <div class="main">
+            
+            <!-- <div class="animation">
+                <br>
+                <div class="wrapper">
+                    <div class="typing-demo">
+                      <code style="font-size: 50px; ">Hello Voters!!</code>
+                    </div>
+                </div>
+                
+            </div>
+            <p>Explore and choose the leaders who will shape the future of our institution!</p>
+            <img src="images/voter.png" alt="" height="40%">
+            <p>Prepare to be dazzled by the spectacular array of candidates vying for your esteemed votes! We've gathered a lineup of potential leaders that's more star-studded than a Hollywood blockbuster. Grab some popcorn (virtual, of course), kick back, and get ready for a rollercoaster of democracy. Don't worry; our candidates aren't running for cover; they're running for office! Click on the positions on the left to uncover the hidden talents and quirks of our aspiring leaders. Remember, this is your chance to be the director of the greatest show on campus – the BMSCE Elections!</p> -->
+            <div class="imgc">
+                <img src="images/candsym/p.png" alt="" height="7%" width="7%">
+                <p><b>President</b></p>
+            </div>
+            <p><i>"Guides the institution's vision, oversees administration, and advocates for the student body's interests."</i></p>
+            <div class="grid">
+                <div class="snippet">
+                    <div>
+                        <img src="images/candidates/m1.png" alt="" height="20%" width="20%">
+                    </div>
+                    <div>
+                        <p>Name: Raj Gupta</p>
+                        <p style="margin-top: -15px;">Semester: II </p>
+                    </div>
+                </div>
+                <div class="snippet">
+                    <div>
+                        <img src="images/candidates/m2.png" alt="" height="20%" width="20%">
+                    </div>
+                    <div>
+                        <p>Name: Prem Chand</p>
+                        <p style="margin-top: -15px;">Semester: II </p>
+                    </div>
+                </div>
+                <div class="snippet">
+
+                </div>
+                <div class="snippet">
+
+                </div>
+                <div class="snippet">
+
+                </div>
+                <div class="snippet">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="column">
+            <div class="left"><img src="images/bmslogo.png" alt="error" srcset="" height="15%" width="15%">&nbsp;&nbsp;
+            <p style="font-size: larger; margin-top:20px"><b>BMSCE ELECTIONS</b></p></div>
+            <p style="font-size: large;"><b>&COPY;</b> 2024 College Elections. <br>We own the stage, but you own your
+                vote. <br> All rights reserved. <br> This website is like a backstage pass – entertaining but not
+                legally binding.
+            </p>
+        </div>
+    
+        <div class="column">
+            <p style="font-size: larger;"><b>Stay Social,Stay Sane</b></p>
+            <div class="left"><img src="images/insta.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Instagram</p></div><br>
+            <div class="left"><img src="images/fb.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 4px;">Facebook</p></div><br>
+            <div class="left"><img src="images/x.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Twitter</p></div>
+        </div>
+    </div>
+    <script>
+        // Get all elements with the 'sep1' class
+        var sep1Elements = document.querySelectorAll(".sep1");
+    
+        // Add a click event listener to each sep1 element
+        sep1Elements.forEach(function(sep1) {
+            sep1.addEventListener("click", function() {
+                // Remove the 'clicked' class from all sep1 elements
+                sep1Elements.forEach(function(element) {
+                    if (element !== sep1) {
+                        element.classList.remove("clicked");
+                    }
+                });
+    
+                // Toggle the 'clicked' class for the clicked sep1 element
+                sep1.classList.toggle("clicked");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -46,6 +46,37 @@ body {
     transition: 750ms;
     filter: drop-shadow(4px 4px 8px black);  
 }
+.footer
+{
+    
+    background-color:rgb(64, 209, 235); 
+    padding: 20px;
+    margin-top: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 600px;
+    justify-content: space-between;
+}
+.column
+{
+    padding: 10px;
+}
+
+.column p {
+    
+    margin-top: 10px; /* Add margin for spacing */
+}
+.center
+{
+    display: grid;
+    place-items: center;
+}
+.center p
+{
+    font-size: 19px;
+    padding: 10px;
+    margin-top: -10px;
+}
     </style>
 </head>
 <body>
@@ -56,9 +87,35 @@ body {
         </div>
         <div class="right">
             <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="contactus.html">Contact Us</a>&nbsp; &nbsp;
-            <a href="aboutus.html">About Us</a>   
+            <a href="aboutus.html">About Us</a>&nbsp; &nbsp;
+            <a href="contactus.html">Contact Us</a>  
         </div>
     </div>
+    <br><br><br><br><br><br>
+    <div class="center">
+        <h1>About US</h1>
+        <p>Welcome to the heart of our college's democratic spirit! At BMSCE, we take pride in fostering an environment where student voices matter, and decisions are made collectively. <br>This page is a glimpse into the essence of our college elections, a platform designed to empower students, celebrate diversity, and shape the future of our vibrant community. Discover the mission that propels us, meet the dedicated individuals steering the ship, delve into our rich history, and find ways to connect with us. <br>Join us on this journey as we continue to uphold the values of transparency, equality, and active student participation in the democratic process</p>
+    </div>
+    <div class="footer">
+        <div class="column">
+            <div class="left"><img src="images/bmslogo.png" alt="error" srcset="" height="15%" width="15%">&nbsp;&nbsp;
+            <p style="font-size: larger; margin-top:20px"><b>BMSCE ELECTIONS</b></p></div>
+            <p style="font-size: large;"><b>&COPY;</b> 2024 College Elections. <br>We own the stage, but you own your
+                vote. <br> All rights reserved. <br> This website is like a backstage pass – entertaining but not
+                legally binding.
+            </p>
+        </div>
+    
+        <div class="column">
+            <p style="font-size: larger;"><b>Stay Social,Stay Sane</b></p>
+            <div class="left"><img src="images/insta.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Instagram</p></div><br>
+            <div class="left"><img src="images/fb.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 4px;">Facebook</p></div><br>
+            <div class="left"><img src="images/x.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Twitter</p></div>
+        </div>
+    </div>
+
 </body>
 </html>

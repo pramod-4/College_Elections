@@ -95,12 +95,18 @@ button:hover {
     transition: 300ms;
   }
 
-input
-{
+input {
+    border: 1px solid #ccc; /* Set a default border color */
+    border-radius: 10px; /* Set border-radius */
+    padding: 5px; /* Adjust padding as needed */
     height: 27px;
     width: 200px;
-    padding: 5px;
-    border-radius: 10px;
+}
+
+/* Additional styling for better visual appearance */
+input:focus {
+    outline: none; /* Remove outline on focus for better aesthetics */
+    border: 2px solid black; /* Change border color on focus */
     
 }
 input::placeholder
